@@ -1,0 +1,11 @@
+#Makefile
+
+CXX=clang++
+
+CXXFLAGS = -std=c++17
+
+Bridge: Bridge.o
+	${CXX} Bridge.o -o Bridge
+
+clean:
+	rm -f *.o Bridge
